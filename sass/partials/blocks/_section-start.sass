@@ -1,0 +1,18 @@
+.section-start
+    min-height: 500px
+    background-image: url(../img/bg-4.jpg)
+    padding-top: 2em
+    padding-bottom: 2em
+    +bg-cover
+    &__container
+        @extend %base-container
+    &__title
+        @extend %base-title
+    &__text
+        @extend %base-text
+        @extend %base-paragraph
+        width:  90%
+        font-weight: 400
+
+    &__link
+        color: inherit

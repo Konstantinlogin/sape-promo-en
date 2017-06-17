@@ -1,0 +1,51 @@
+.section-results
+    width: 100%
+    min-height: 400px
+    color: white
+    background-image: url(../img/bg-3.jpg)
+    +bg-cover
+    padding-top: 2em
+    padding-bottom: 3em
+    &__title
+        @extend %base-title
+        padding-bottom: .6em
+        padding-top: .6em
+
+    &__container
+        +flexbox
+        @extend %base-container
+        margin: auto
+    &__item
+        position: relative
+        background-color: rgba(0, 0, 0, 0.2)
+        margin-left: 10px
+        margin-right: 10px
+        padding-left: 35px
+    
+    &__icon
+        position: absolute
+        top: 25px
+        left: 25px
+
+    &__text, &__tagline
+        padding-left: 60px
+        width: 70%
+
+    &__tagline
+        font-weight: 700
+        font-size: 1.2em
+
+    &__text
+        font-weight: 400
+
+@media screen and (max-width: $small-scale)
+    .section-results
+        &__container
+            display: block
+        &__item
+            padding-top: 1em
+            padding-bottom: 1em
+
+   
+   
+
