@@ -204,11 +204,11 @@ th {
   font-weight: 400;
   font-style: normal; }
 
-.section-work__container {
+.section-work__container, .section-advantages__container {
   margin: 0 auto;
   max-width: 1040px; }
 
-.section-work__title {
+.section-work__title, .section-advantages__title {
   margin: 0;
   padding-top: 0.83em;
   font-size: 3em;
@@ -219,12 +219,13 @@ th {
   padding: 0; }
 
 @media screen and (max-width: 768px) {
-  .section-work__title {
+  .section-work__title, .section-advantages__title {
     line-height: 1;
     font-size: 2em; } }
 
 body {
-  font-family: 'Circe', sans-serif; }
+  font-family: 'Circe', sans-serif;
+  font-weight: 600; }
 
 .section-head {
   display: -webkit-box;
@@ -285,6 +286,21 @@ body {
     padding: 1em;
     font-weight: 600; }
 
+.section-advantages {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 500px;
+  width: 100%;
+  background-color: #d9e7e5; }
+  .section-advantages__title {
+    padding-bottom: 2rem; }
+
 .grid-icons {
   display: -webkit-box;
   display: -webkit-flex;
@@ -339,3 +355,38 @@ body {
       margin-top: 1rem;
       margin-bottom: 1rem;
       background-image: url(../img/arrow-down.png); } }
+
+.grid-thumbs {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .grid-thumbs__item {
+    position: relative;
+    padding: 1.2em;
+    background-color: white;
+    margin-right: 20px;
+    max-width: 280px;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.42);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.42);
+    box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.42); }
+  .grid-thumbs__icon {
+    width: 42px;
+    height: 38px;
+    position: absolute;
+    left: 20px;
+    top: 20px; }
+  .grid-thumbs__text {
+    display: block;
+    margin-left: 65px;
+    padding-right: 2em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: .9em;
+    line-height: 2;
+    margin-top: .5em; }
+    .grid-thumbs__text--text-bold {
+      font-family: 'Circe', sans-serif;
+      font-size: 1.4em;
+      line-height: 1.2;
+      font-weight: 700; }
