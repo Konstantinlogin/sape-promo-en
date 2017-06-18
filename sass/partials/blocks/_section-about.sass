@@ -1,0 +1,19 @@
+.section-about
+    background-image: url(../img/bg-2.jpg)
+    +bg-cover
+    margin-top: -42px
+    padding-top: 1em
+    padding-bottom: 2em
+    &__container
+        @extend %base-container
+    &__title
+        @extend %base-title
+    &__text
+        @extend %base-text
+        @extend %base-paragraph
+
+    &__tagline
+        @extend %base-text
+        @extend %base-paragraph
+        font-weight: 700
+        font-size: 1.5em

@@ -1,0 +1,58 @@
+.grid-table
+    display: table
+    max-width: 800px
+    margin: auto
+    &__row
+        display: table-row
+    &__item
+        position: relative
+        display: table-cell
+        vertical-align: top
+
+        width: 45%
+        padding-right: 5%
+        padding-left: 65px
+
+    &__tagline
+        font-weight: 700
+        display: inline-block
+        position: absolute
+        top: 0
+        min-height: 50px
+
+    &__text
+        display: inline-block
+        margin-top: 70px
+        width: 90%
+
+
+    &__icon
+        position: absolute
+        left: 5px
+        top: 20px
+
+@media screen and (max-width: $small-scale)
+    .grid-table
+        display: block
+        &__row
+            display: block
+        &__item
+
+            display: block
+            width: 80%
+            padding-right: 0
+            padding-left: 55px
+
+        &__tagline
+            position: static
+            min-height: 0
+            margin-bottom: 0
+
+        &__text
+            margin-top: 0
+
+        &__icon
+            width: 40px
+
+
+

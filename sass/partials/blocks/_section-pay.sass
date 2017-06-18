@@ -1,7 +1,9 @@
 .section-pay
+    background-color: #ecf4f7
     &__container
         @extend %base-container
         text-align: center
+        padding-bottom: 5rem
 
     &__title
 
@@ -10,7 +12,10 @@
     &__text
         @extend %base-text
         @extend %base-paragraph
+        line-height: 1.5
+
+    &__link
+        @extend %base-link
 
     &__paypal-logo
         display: inline-block
-        margin: 1em    

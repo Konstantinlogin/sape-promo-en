@@ -1,7 +1,9 @@
 .grid-contacts
     +flexbox
     justify-content: space-between
-    max-width: 900px
+    -webkit-justify-content: space-between
+    -ms-justify-content: space-between
+    // max-width: 900px
     margin: 0 auto
 
     &__item
@@ -27,13 +29,18 @@
         position: absolute
         width: 30px
         height: 30px
-        left: calc(50% - 30px)
-        margin-left: -45px
+        left: 60px
 
 @media screen and (max-width: $medium-scale)
     .grid-contacts
         &__item
             padding: 1em
+        &__icon
+            left: 30px
+
+        &__text,  &__link
+            margin-left: 50px
+
 
 
 @media screen and (max-width: $small-scale)
@@ -47,7 +54,7 @@
             margin-bottom: 10px
 
         &__icon
-            left: calc(50% - 45px)
+            left: 20px
 
      
 

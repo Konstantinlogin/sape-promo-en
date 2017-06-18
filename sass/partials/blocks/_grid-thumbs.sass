@@ -1,9 +1,12 @@
 .grid-thumbs
     +flexbox
     justify-content: space-between
+    -webkit-justify-content: space-between
+    -ms-justify-content: space-between
 
-    &.mt-2
-        margin-top: 2em
+    &.mar-1
+        margin-top: 1em
+        margin-bottom: 1em
 
     &__item
         position: relative
@@ -21,6 +24,7 @@
             text-align: center
             padding: .8em
             width: 100%
+            max-width: 200px
     &__icon
         width: 42px
         height: 38px
@@ -50,8 +54,9 @@
 
     &__payment-logo
         display: inline-block
-        // padding: 1em 2em 0.5em 2em
+        padding-top: 1em
     &__payment-name
+        margin: 0
         padding-top: 1em
         display: block
         font-weight: 400
@@ -63,6 +68,7 @@
     .grid-thumbs
         &__item
             padding: 1em
+   
         &__icon
             left: 10px
             top: 30px
@@ -78,8 +84,10 @@
 @media screen and (max-width: $small-scale)
     .grid-thumbs
         display: block
+
         &__item
             padding: 1em
+            max-width: calc(100% - 55px)
         &__icon
             top: 24px
             left: 10px
