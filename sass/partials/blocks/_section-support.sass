@@ -1,15 +1,14 @@
 .section-support
-    padding-top: 2em
-    // padding-bottom: 3em
-    background-color: white
+
     &__container
         @extend %base-container
+        margin-bottom: 2em
     &__title
         @extend %base-title
     &__text, &__tagline
         @extend %base-text
         @extend %base-paragraph
-        width: 95%
+        width: 90%
         line-height: 1.5
     &__tagline
         font-weight: 700
@@ -17,7 +16,8 @@
         padding-bottom: 3rem
 
 @media screen and (max-width: $small-scale)
-    .section-support__text
-        width: 80%
+    .section-support
+        &__text, &__tagline
+            width: 80%
 
     

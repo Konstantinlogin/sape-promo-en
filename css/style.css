@@ -206,7 +206,8 @@ th {
 
 .section-work__container, .section-advantages__container, .section-start__container, .section-results__container, .section-support__container {
   margin: 0 auto;
-  max-width: 1040px; }
+  max-width: 1040px;
+  padding-bottom: 2em; }
 
 .section-work__title, .section-advantages__title, .section-start__title, .section-results__title, .section-support__title {
   margin: 0;
@@ -364,19 +365,20 @@ body {
     padding-top: 1em;
     padding-bottom: 1em; } }
 
-.section-support {
-  padding-top: 2em;
-  background-color: white; }
-  .section-support__text, .section-support__tagline {
-    width: 95%;
-    line-height: 1.5; }
-  .section-support__tagline {
-    font-weight: 700;
-    font-size: 1.3em;
-    padding-bottom: 3rem; }
+.section-support__container {
+  margin-bottom: 2em; }
+
+.section-support__text, .section-support__tagline {
+  width: 90%;
+  line-height: 1.5; }
+
+.section-support__tagline {
+  font-weight: 700;
+  font-size: 1.3em;
+  padding-bottom: 3rem; }
 
 @media screen and (max-width: 680px) {
-  .section-support__text {
+  .section-support__text, .section-support__tagline {
     width: 80%; } }
 
 .grid-icons {
@@ -511,27 +513,27 @@ body {
   max-width: 900px;
   margin: 0 auto; }
   .grid-contacts__item {
-    border: 4px solid #f5f5f7;
     position: relative;
+    border: 4px solid #f5f5f7;
     padding: 1.8em;
     margin-right: 5px;
     margin-left: 5px;
     margin-bottom: 5px;
-    width: 280px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex; }
+    width: 280px; }
   .grid-contacts__text {
-    display: block; }
-  .grid-contacts__icon {
-    width: 30px;
-    height: 30px;
-    margin-right: 20px; }
+    display: block;
+    margin-left: 80px; }
   .grid-contacts__link {
+    margin-left: 80px;
     color: #5a93e0;
     text-decoration: none;
     border-bottom: 1px dashed; }
+  .grid-contacts__icon {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: calc(50% - 30px);
+    margin-left: -45px; }
 
 @media screen and (max-width: 768px) {
   .grid-contacts__item {
@@ -541,14 +543,19 @@ body {
   .grid-contacts {
     display: block; }
     .grid-contacts__item {
-      margin-bottom: 20px; } }
+      margin-bottom: 20px;
+      width: 250px;
+      margin: 0 auto;
+      margin-bottom: 10px; }
+    .grid-contacts__icon {
+      left: calc(50% - 45px); } }
 
 .button-block {
   width: 100%;
   display: inline-block;
   text-align: center;
   padding-top: 2em;
-  padding-bottom: 1.8em; }
+  padding-bottom: 2em; }
   .button-block--bg-black {
     background-color: #282828; }
   .button-block--def-space {
