@@ -204,22 +204,22 @@ th {
   font-weight: 400;
   font-style: normal; }
 
-.section-work__container, .section-advantages__container, .section-start__container, .section-results__container, .section-support__container {
+.section-work__container, .section-advantages__container, .section-start__container, .section-results__container, .section-support__container, .section-pay__container {
   margin: 0 auto;
   max-width: 1040px;
   padding-bottom: 2em; }
 
-.section-work__title, .section-advantages__title, .section-start__title, .section-results__title, .section-support__title {
+.section-work__title, .section-advantages__title, .section-start__title, .section-results__title, .section-support__title, .section-pay__title {
   margin: 0;
   padding-top: 0.83em;
   font-size: 3em;
   font-weight: 600;
   text-align: center; }
 
-.section-work__text, .section-start__text, .section-support__text, .section-support__tagline {
+.section-work__text, .section-start__text, .section-support__text, .section-support__tagline, .section-pay__text {
   padding: 0; }
 
-.section-work__text, .section-start__text, .section-support__text, .section-support__tagline {
+.section-work__text, .section-start__text, .section-support__text, .section-support__tagline, .section-pay__text {
   text-align: center;
   font-size: 1.1em;
   width: 70%;
@@ -228,10 +228,10 @@ th {
   font-weight: 600; }
 
 @media screen and (max-width: 768px) {
-  .section-work__title, .section-advantages__title, .section-start__title, .section-results__title, .section-support__title {
+  .section-work__title, .section-advantages__title, .section-start__title, .section-results__title, .section-support__title, .section-pay__title {
     line-height: 1;
     font-size: 2em; }
-  .section-work__text, .section-start__text, .section-support__text, .section-support__tagline {
+  .section-work__text, .section-start__text, .section-support__text, .section-support__tagline, .section-pay__text {
     padding-right: 10px;
     padding-left: 10px; } }
 
@@ -381,6 +381,13 @@ body {
   .section-support__text, .section-support__tagline {
     width: 80%; } }
 
+.section-pay__container {
+  text-align: center; }
+
+.section-pay__paypal-logo {
+  display: inline-block;
+  margin: 1em; }
+
 .grid-icons {
   display: -webkit-box;
   display: -webkit-flex;
@@ -440,7 +447,13 @@ body {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .grid-thumbs.mt-2 {
+    margin-top: 2em; }
   .grid-thumbs__item {
     position: relative;
     padding: 1.2em 0 1.2em 0;
@@ -452,6 +465,11 @@ body {
     -webkit-box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.42);
     -moz-box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.42);
     box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.42); }
+    .grid-thumbs__item--payments {
+      display: inline-block;
+      text-align: center;
+      padding: .8em;
+      width: 100%; }
   .grid-thumbs__icon {
     width: 42px;
     height: 38px;
@@ -474,6 +492,12 @@ body {
       font-weight: 700;
       padding-right: .2em;
       padding-bottom: .2em; }
+  .grid-thumbs__payment-logo {
+    display: inline-block; }
+  .grid-thumbs__payment-name {
+    padding-top: 1em;
+    display: block;
+    font-weight: 400; }
 
 @media screen and (max-width: 768px) {
   .grid-thumbs__item {
