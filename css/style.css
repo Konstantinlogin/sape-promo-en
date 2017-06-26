@@ -206,7 +206,7 @@ th {
 
 .section-work__container, .section-advantages__container, .section-start__container, .section-results__container, .section-support__container, .section-pay__container, .section-about__container, .section-api__container {
   margin: 0 auto;
-  max-width: 980px;
+  max-width: 1000px;
   padding-bottom: 2em; }
 
 .section-work__title, .section-advantages__title, .section-start__title, .section-results__title, .section-support__title, .section-pay__title, .section-about__title, .section-api__title {
@@ -275,7 +275,7 @@ body {
   .section-head__title {
     display: block;
     width: 100%;
-    max-width: 980px;
+    max-width: 1000px;
     margin: 3rem auto;
     text-align: center;
     color: white;
@@ -304,9 +304,7 @@ body {
       width: 180px; } }
 
 .section-work {
-  background-image: url(../img/bg-2.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #f8f8f8;
   padding-bottom: 2em; }
 
 .section-advantages {
@@ -322,10 +320,10 @@ body {
 .section-start {
   min-height: 500px;
   background-image: url(../img/bg-4.jpg);
+  background-size: 200px;
+  background-repeat: repeat;
   padding-top: 2em;
-  padding-bottom: 2em;
-  background-repeat: no-repeat;
-  background-size: cover; }
+  padding-bottom: 2em; }
   .section-start--last-section {
     background-color: white;
     min-height: 0;
@@ -417,10 +415,7 @@ body {
     display: inline-block; }
 
 .section-about {
-  background-image: url(../img/bg-2.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-top: -42px;
+  background-color: #f8f8f8;
   padding-top: 1em;
   padding-bottom: 2em; }
   .section-about__tagline {
@@ -429,8 +424,8 @@ body {
 
 .section-api {
   background-image: url(../img/bg-4.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 250px;
+  background-repeat: repeat;
   padding-top: 2em;
   padding-bottom: 2em; }
   .section-api__tagline {
