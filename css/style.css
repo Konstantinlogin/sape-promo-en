@@ -204,19 +204,19 @@ th {
   font-weight: 400;
   font-style: normal; }
 
-.section-work__container, .section-advantages__container, .section-start__container, .section-results__container, .section-support__container, .section-pay__container, .section-about__container, .section-api__container {
+.section-work__container, .section-advantages__container, .section-start__container, .section-results__container, .section-support__container, .section-pay__container, .section-about__container, .section-api__container, .section-last__container {
   margin: 0 auto;
   max-width: 1000px;
   padding-bottom: 2em; }
 
-.section-work__title, .section-advantages__title, .section-start__title, .section-results__title, .section-support__title, .section-pay__title, .section-about__title, .section-api__title {
+.section-work__title, .section-advantages__title, .section-start__title, .section-results__title, .section-support__title, .section-pay__title, .section-about__title, .section-api__title, .section-last__title {
   margin: 0;
   padding-top: 0.83em;
   font-size: 3em;
   font-weight: 600;
   text-align: center; }
 
-.section-work__text, .section-start__text, .section-support__text, .section-support__tagline, .section-pay__text, .section-about__text, .section-about__tagline, .section-api__text, .section-api__tagline {
+.section-work__text, .section-start__text, .section-support__text, .section-support__tagline, .section-pay__text, .section-about__text, .section-about__tagline, .section-api__text, .section-api__tagline, .section-last__text {
   padding: 0; }
 
 .section-pay__link, .contact__link {
@@ -224,7 +224,7 @@ th {
   text-decoration: none;
   border-bottom: 1px dashed; }
 
-.section-work__text, .section-start__text, .section-support__text, .section-support__tagline, .section-pay__text, .section-about__text, .section-about__tagline, .section-api__text, .section-api__tagline {
+.section-work__text, .section-start__text, .section-support__text, .section-support__tagline, .section-pay__text, .section-about__text, .section-about__tagline, .section-api__text, .section-api__tagline, .section-last__text {
   text-align: center;
   font-size: 1.1em;
   width: 70%;
@@ -233,13 +233,13 @@ th {
   font-weight: 600; }
 
 @media screen and (max-width: 768px) {
-  .section-work__title, .section-advantages__title, .section-start__title, .section-results__title, .section-support__title, .section-pay__title, .section-about__title, .section-api__title {
+  .section-work__title, .section-advantages__title, .section-start__title, .section-results__title, .section-support__title, .section-pay__title, .section-about__title, .section-api__title, .section-last__title {
     line-height: 1;
     font-size: 2em;
     padding-right: 0;
     padding-left: 0;
     width: 100%; }
-  .section-work__text, .section-start__text, .section-support__text, .section-support__tagline, .section-pay__text, .section-about__text, .section-about__tagline, .section-api__text, .section-api__tagline {
+  .section-work__text, .section-start__text, .section-support__text, .section-support__tagline, .section-pay__text, .section-about__text, .section-about__tagline, .section-api__text, .section-api__tagline, .section-last__text {
     display: inline-block;
     width: calc(100% - 20px);
     padding-left: 10px;
@@ -305,7 +305,10 @@ body {
 
 .section-work {
   background-color: #f8f8f8;
-  padding-bottom: 2em; }
+  padding-bottom: 2em;
+  background-image: url(../img/bg-2_v2.jpg);
+  background-repeat: no-repeat;
+  background-position: center bottom; }
 
 .section-advantages {
   min-height: 500px;
@@ -319,7 +322,7 @@ body {
 
 .section-start {
   min-height: 500px;
-  background-image: url(../img/bg-4.jpg);
+  background-image: url(../img/hip-square.png);
   background-size: 200px;
   background-repeat: repeat;
   padding-top: 2em;
@@ -417,7 +420,10 @@ body {
 .section-about {
   background-color: #f8f8f8;
   padding-top: 1em;
-  padding-bottom: 2em; }
+  padding-bottom: 2em;
+  background-image: url(../img/bg-2_v2.jpg);
+  background-repeat: no-repeat;
+  background-position: center bottom; }
   .section-about__tagline {
     font-weight: 700;
     font-size: 1.5em; }
@@ -430,6 +436,17 @@ body {
   padding-bottom: 2em; }
   .section-api__tagline {
     font-weight: 700; }
+
+.section-last {
+  background-color: white;
+  background-size: 200px;
+  background-repeat: repeat;
+  padding-top: 2em;
+  padding-bottom: 2em; }
+  .section-last__text {
+    font-weight: 400; }
+  .section-last__link {
+    color: inherit; }
 
 .grid-icons {
   display: -webkit-box;
